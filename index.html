@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <video src="Assets/videoplayback.mp4" autoplay muted loop></video>
+      <audio
+        src="Assets/DotA 2 Intro cinematic full video HD opening cinematic.mp3"
+        autoplay="true"
+      ></audio>
+      <header class="header">
+        <div class="header__logo">
+          <img
+            src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/global/dota2_logo_horiz.png"
+            alt="Logo"
+          />
+        </div>
+        <ul class="header__navigation">
+          <li><a href="#">Game</a></li>
+          <li><a href="#">Heroes</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Esports</a></li>
+        </ul>
+        <img class="menu-btn" src="Icons/Chapa.png" alt="tapon" />
+      </header>
+      <div class="header__section">
+        <section class="hero">
+          <h1>"A MODERN MULTIPLAYER MASTERPIECE."</h1>
+        </section>
+        <div class="card__container">
+          <div class="card card__image-1">
+            <span class="card__span">April 2023</span>
+            <h3 class="card__tittle">Mirana</h3>
+            <p class="card__description">
+              Born to a royal family, a blood princess next in line for the
+              Solar Throne.
+            </p>
+            <div class="background"></div>
+          </div>
+          <div class="card card__image-2">
+            <span class="card__span">April 2023</span>
+            <h3 class="card__tittle">Sniper</h3>
+            <p class="card__description">
+              Kardel Sharpeye was born deep in the mountains of Knollen.
+            </p>
+            <div class="background"></div>
+          </div>
+          <div class="card card__image-3">
+            <span class="card__span">April 2023</span>
+            <h3 class="card__tittle">Earthshaker</h3>
+            <p class="card__description">
+              He had shaped himself in the image of a mortal beast, and named
+              himself Raigor Stonehoof.
+            </p>
+            <div class="background"></div>
+          </div>
+        </div>
+      </div>
+      <script>
+        const menuHamburguesa = document.querySelector(".menu-btn");
+        const navList = document.querySelector(".header__navigation");
+
+        menuHamburguesa.addEventListener("click", () => {
+          navList.classList.toggle("mobile-menu");
+        });
+      </script>
+    </div>
+  </body>
+</html>
