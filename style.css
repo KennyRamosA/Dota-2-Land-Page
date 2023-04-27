@@ -135,21 +135,16 @@ body {
   cursor: pointer;
   transition: 0.8s;
   box-shadow: 0px 0px 10px #000;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding-top: 150px;
 }
 
 .card:hover {
   transform: scale(1.03);
   border-bottom: 2px solid #9d2547;
-}
-
-.card p {
-  transition: 0.5s;
-}
-
-.card:hover > p {
-  display: block;
-  font-weight: bold;
-  font-style: italic;
+  padding-top: 10px;
 }
 
 .card__image-1 {
@@ -168,8 +163,6 @@ body {
   margin: 0px 10px;
   color: white;
   z-index: 2;
-  position: absolute;
-  bottom: 0;
   font-size: 20px;
 }
 
@@ -179,17 +172,14 @@ body {
   z-index: 2;
   letter-spacing: 1px;
   text-transform: uppercase;
-  position: absolute;
-  bottom: 25px;
   font-size: 10px;
 }
 
 .card__description {
-  width: 40%;
+  width: 55%;
   color: rgb(255, 255, 255);
   font-size: 1rem;
   margin: 0px 10px 0px 10px;
-  display: none;
   transition: 0.8s;
 }
 
