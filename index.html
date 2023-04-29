@@ -13,12 +13,12 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body onclick="PlayAudio()">
     <div class="container">
       <video src="Assets/videoplayback.mp4" autoplay muted loop></video>
       <audio
+        id="musica1"
         src="Assets/DotA 2 Intro cinematic full video HD opening cinematic.mp3"
-        autoplay="true"
       ></audio>
       <header class="header">
         <div class="header__logo">
@@ -33,7 +33,6 @@
           <li><a href="#">News</a></li>
           <li><a href="#">Esports</a></li>
         </ul>
-        <img class="menu-btn" src="Icons/Chapa.png" alt="tapon" />
       </header>
       <div class="header__section">
         <section class="hero">
@@ -68,32 +67,70 @@
           </div>
         </div>
       </div>
-      <section class="gallery__container">
-        <video
-          class="heropage_HeroPortrait_22nJ5"
-          poster="https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/mirana.png"
-          autoplay=""
-          preload="auto"
-          loop=""
-          playsinline=""
-        >
-          <source
-            type="video/webm"
-            src="https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/mirana.webm"
-          />
-          <img
-            src="https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/mirana.png"
-          />
-        </video>
-      </section>
-      <script>
+      <!-- <script>
+        function PlayAudio() {
+          document.getElementById("musica1").play();
+        }
+      </script> -->
+      <!-- <script>
         const menuHamburguesa = document.querySelector(".menu-btn");
         const navList = document.querySelector(".header__navigation");
 
         menuHamburguesa.addEventListener("click", () => {
           navList.classList.toggle("mobile-menu");
         });
-      </script>
+      </script> -->
+    </div>
+    <div class="section__container">
+      <div class="matriz__tittle">Choose Your Hero</div>
+      <div class="matriz__description">
+        From magical tacticians to fierce brutes and cunning rogues, Dota 2's
+        hero pool is massive and limitlessly diverse. Unleash incredible
+        abilities and devastating ultimates on your way to victory.
+      </div>
+      <div class="section__heroes">
+        <div class="matriz__6x6">
+          <div class="imagen hero__abbadon"></div>
+          <div class="imagen hero__alchemist"></div>
+          <div class="imagen hero__ancientaparition"></div>
+          <div class="imagen hero__antimage"></div>
+          <div class="imagen hero__arc_warden"></div>
+          <div class="imagen hero__axe"></div>
+          <div class="imagen hero__bane"></div>
+          <div class="imagen hero__batrider"></div>
+          <div class="imagen hero__beastmaster"></div>
+          <div class="imagen hero__bloodseeker"></div>
+          <div class="imagen hero__bounty_hunter"></div>
+          <div class="imagen hero__brewmaster"></div>
+          <div class="imagen hero__bristleback"></div>
+          <div class="imagen hero__broodmother"></div>
+          <div class="imagen hero__centaur"></div>
+          <div class="imagen hero__chaos_knight"></div>
+          <div class="imagen hero__chen"></div>
+          <div class="imagen hero__clinkz"></div>
+          <div class="imagen hero__crystal_maiden"></div>
+          <div class="imagen hero__dark_seer"></div>
+          <div class="imagen hero__dark_willow"></div>
+          <div class="imagen hero__dawnbreaker"></div>
+          <div class="imagen hero__dazzle"></div>
+          <div class="imagen hero__death_prophet"></div>
+          <div class="imagen hero__disruptor"></div>
+          <div class="imagen hero__doom_bringer"></div>
+          <div class="imagen hero__dragon_knight"></div>
+          <div class="imagen hero__drow_ranger"></div>
+          <div class="imagen hero__earth_spirit"></div>
+          <div class="imagen hero__rattletrap"></div>
+        </div>
+        <div class="section__bighero">
+          <video
+            class="animation"
+            src="Assets/Animations/abaddon.webm"
+            autoplay
+            muted
+            loop
+          ></video>
+        </div>
+      </div>
     </div>
   </body>
 </html>
