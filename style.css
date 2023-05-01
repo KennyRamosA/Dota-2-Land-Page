@@ -225,7 +225,7 @@ body {
 
 .section__bighero {
   width: 56%;
-  height: 710px;
+  height: 708px;
   margin: auto;
   text-align: center;
   position: absolute;
@@ -235,7 +235,8 @@ body {
 }
 
 .matriz__6x6 {
-  width: 45%;
+  width: 91%;
+  height: 83%;
   display: grid;
   justify-content: flex-start;
   grid-template-columns: repeat(4, 0.1fr);
@@ -244,11 +245,15 @@ body {
   top: 20px;
 }
 
+.container_i {
+  width: 100%;
+  height: 100%;
+}
+
 .imagen {
-  width: 140px;
-  height: 80px;
+  width: 100%;
+  height: 100%;
   border: 1px solid black;
-  padding: 10px;
   text-align: center;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
@@ -257,12 +262,12 @@ body {
   transition: 1s;
 }
 
-.imagen:hover {
+/* .imagen:hover {
   transform: scale(1.03);
   border-bottom: 2px solid #9d2547;
-}
+} */
 
-.hero__abbadon {
+/* .hero__abbadon {
   background-image: url(Assets/Heroes/abaddon.png);
 }
 
@@ -380,10 +385,10 @@ body {
 
 .hero__rattletrap {
   background-image: url(Assets/Heroes/rattletrap.png);
-}
+} */
 
 .animation {
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
   height: inherit;
 }
