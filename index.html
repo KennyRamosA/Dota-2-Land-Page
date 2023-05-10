@@ -16,10 +16,10 @@
   <body onclick="PlayAudio()">
     <div class="container">
       <video src="Assets/videoplayback.mp4" autoplay muted loop></video>
-      <!-- <audio
+      <audio
         id="musica1"
         src="Assets/DotA 2 Intro cinematic full video HD opening cinematic.mp3"
-      ></audio> -->
+      ></audio>
       <header class="header">
         <div class="header__logo">
           <img
@@ -67,236 +67,196 @@
           </div>
         </div>
       </div>
-      <!-- <script>
+      <script>
         function PlayAudio() {
           document.getElementById("musica1").play();
         }
-      </script> -->
-      <!-- <script>
-        const menuHamburguesa = document.querySelector(".menu-btn");
-        const navList = document.querySelector(".header__navigation");
-
-        menuHamburguesa.addEventListener("click", () => {
-          navList.classList.toggle("mobile-menu");
-        });
-      </script> -->
+      </script>
     </div>
     <div class="section__container">
-      <div class="matriz__tittle">Choose Your Hero</div>
-      <div class="matriz__description">
-        From magical tacticians to fierce brutes and cunning rogues, Dota 2's
-        hero pool is massive and limitlessly diverse. Unleash incredible
-        abilities and devastating ultimates on your way to victory.
+        <div class="section_heroes">
+          <div class="heroes__tittle">Choose Your Hero</div>
+          <div class="heroes__filters">
+            <div class="filter__tittle">filter heroes</div>
+            <div class="filter__atribute">
+                <h3 class="atribute__text">
+                    attribute
+                </h3>
+                <img class="atribute__icons" id="iconStr" src="Assets/filter-str-active-removebg-preview.png" alt="">
+                <img class="atribute__icons" id="iconAgi" src="Assets/filter-agi-active-removebg-preview.png" alt="">
+                <img class="atribute__icons" id="iconInt" src="Assets/filter-int-active-removebg-preview.png" alt="">
+            </div>
+            <div class="filter__search">
+                <div class="search__container">
+                    <div class="search__icon">
+                    </div>
+                    <form action="">
+                        <input class="search__input" id="buscador" type="search" placeholder="">
+                    </form>
+                </div>
+            </div>
+          </div>
+          <section class="heroes__container">
+              <picture id="myPicture" class="heroes__img">
+                  <img class="small__img str" id="str" src="Assets/Heroes/abaddon.png" alt="abaddon">
+                  <div class="img_description">
+                    <img src="Assets/hero_strength.png" alt="">
+                    <h3>Abaddon</h3>
+                  </div>
+                  <img class="small__img str" id="str" src="Assets/Heroes/alchemist.png" alt="alchemist">
+                  <img class="small__img int" id="int" src="Assets/Heroes/ancient_apparition.png" alt="ancient apparition">
+                  <img class="small__img agi" id="agi" src="Assets/Heroes/antimage.png" alt="antimage">
+                  <img class="small__img int" id="int" src="Assets/Heroes/arc_warden.png" alt="arc warden">
+                  <img class="small__img str" id="str" src="Assets/Heroes/axe.png" alt="axe">
+                  <img class="small__img int" id="int" src="Assets/Heroes/bane.png" alt="bane">
+                  <img class="small__img int" id="int" src="Assets/Heroes/batrider.png" alt="batrider">
+                  <img class="small__img str" id="str" src="Assets/Heroes/beastmaster.png" alt="beastmaster">
+                  <img class="small__img agi" id="agi" src="Assets/Heroes/bloodseeker.png" alt="bloodseeker">
+                  <img class="small__img agi" id="agi" src="Assets/Heroes/bounty_hunter.png" alt="bounty hunter">
+                  <img class="small__img str" id="str" src="Assets/Heroes/brewmaster.png" alt="brewmaster">
+                  <img class="small__img str" id="str" src="Assets/Heroes/bristleback.png" alt="bristleback">
+                  <img class="small__img agi" id="agi" src="Assets/Heroes/broodmother.png" alt="broodmother">
+                  <img class="small__img str" id="str" src="Assets/Heroes/centaur.png" alt="centaur">
+                  <img class="small__img str" id="str" src="Assets/Heroes/chaos_knight.png" alt="chaos knight">
+                  <img class="small__img int" id="int" src="Assets/Heroes/chen.png" alt="chen">
+                  <img class="small__img agi" id="agi" src="Assets/Heroes/clinkz.png" alt="clinkz">
+                  <img class="small__img int" id="int" src="Assets/Heroes/crystal_maiden.png" alt="crystal maiden">
+                  <img class="small__img int" id="int" src="Assets/Heroes/dark_seer.png" alt="dark seer">
+                  <img class="small__img int" id="int" src="Assets/Heroes/dark_willow.png" alt="dark willow">
+                  <img class="small__img str" id="str" src="Assets/Heroes/dawnbreaker.png" alt="dawnbreaker">
+                  <img class="small__img int" id="int" src="Assets/Heroes/dazzle.png" alt="dazzle">
+                  <img class="small__img int" id="int" src="Assets/Heroes/death_prophet.png" alt="death prophet">
+                  <img class="small__img int" id="int" src="Assets/Heroes/disruptor.png" alt="disruptor">
+                  <img class="small__img str" id="str" src="Assets/Heroes/doom_bringer.png" alt="doom bringer">
+                  <img class="small__img str" id="str" src="Assets/Heroes/dragon_knight.png" alt="dragon knight">
+                  <img class="small__img agi" id="agi" src="Assets/Heroes/drow_ranger.png" alt="drow ranger">
+                  <img class="small__img str" id="str" src="Assets/Heroes/earth_spirit.png" alt="earth spirit">
+                  <img class="small__img str" id="str" src="Assets/Heroes/rattletrap.png" alt="rattletrap">
+              </picture>
+              <div class="video__container" >
+                  <video class="video__big" id="video__heroes" autoplay muted loop src="Assets/Heroes/abaddon.webm"></video>
+              </div>
+          </section>
       </div>
-      <div class="section__heroes">
-        <div class="matriz__6x6">
-          <div id="div1" class="container_i hero__abbadon">
-            <img class="imagen" src="Assets/Heroes/abaddon.png" alt="abaddon" />
-          </div>
-          <div id="div2" class="container_i hero__alchemist">
-            <img
-              class="imagen"
-              src="Assets/Heroes/alchemist.png"
-              alt="alchemist"
-            />
-          </div>
-          <div id="div3" class="container_i hero__ancientaparition">
-            <img
-              class="imagen"
-              src="Assets/Heroes/ancient_apparition.png"
-              alt="ancientaparition"
-            />
-          </div>
-          <div id="div4" class="container_i hero__antimage">
-            <img
-              class="imagen"
-              src="Assets/Heroes/antimage.png"
-              alt="antimage"
-            />
-          </div>
-          <div id="div5" class="container_i hero__arc_warden">
-            <img
-              class="imagen"
-              src="Assets/Heroes/arc_warden.png"
-              alt="arc_warden"
-            />
-          </div>
-          <div id="div6" class="container_i hero__axe">
-            <img class="imagen" src="Assets/Heroes/axe.png" alt="axe" />
-          </div>
-          <div id="div7" class="container_i hero__bane">
-            <img class="imagen" src="Assets/Heroes/bane.png" alt="bane" />
-          </div>
-          <div id="div8" class="container_i hero__batrider">
-            <img
-              class="imagen"
-              src="Assets/Heroes/batrider.png"
-              alt="batrider"
-            />
-          </div>
-          <div id="div9" class="container_i hero__beastmaster">
-            <img
-              class="imagen"
-              src="Assets/Heroes/beastmaster.png"
-              alt="beastmaster"
-            />
-          </div>
-          <div id="div10" class="container_i hero__bloodseeker">
-            <img
-              class="imagen"
-              src="Assets/Heroes/bloodseeker.png"
-              alt="bloodseeker"
-            />
-          </div>
-          <div id="div11" class="container_i hero__bounty_hunter">
-            <img
-              class="imagen"
-              src="Assets/Heroes/bounty_hunter.png"
-              alt="bounty_hunter"
-            />
-          </div>
-          <div id="div12" class="container_i hero__brewmaster">
-            <img
-              class="imagen"
-              src="Assets/Heroes/brewmaster.png"
-              alt="brewmaster"
-            />
-          </div>
-          <div id="div13" class="container_i hero__bristleback">
-            <img
-              class="imagen"
-              src="Assets/Heroes/bristleback.png"
-              alt="bristleback"
-            />
-          </div>
-          <div id="div14" class="container_i hero__broodmother">
-            <img
-              class="imagen"
-              src="Assets/Heroes/broodmother.png"
-              alt="broodmother"
-            />
-          </div>
-          <div id="div15" class="container_i hero__centaur">
-            <img class="imagen" src="Assets/Heroes/centaur.png" alt="centaur" />
-          </div>
-          <div id="div16" class="container_i hero__chaos_knight">
-            <img
-              class="imagen"
-              src="Assets/Heroes/chaos_knight.png"
-              alt="chaos_knight"
-            />
-          </div>
-          <div id="div17" class="container_i hero__chen">
-            <img class="imagen" src="Assets/Heroes/chen.png" alt="chen" />
-          </div>
-          <div id="div18" class="container_i hero__clinkz">
-            <img class="imagen" src="Assets/Heroes/clinkz.png" alt="clinkz" />
-          </div>
-          <div id="div19" class="container_i hero__crystal_maiden">
-            <img
-              class="imagen"
-              src="Assets/Heroes/crystal_maiden.png"
-              alt="crystal_maiden"
-            />
-          </div>
-          <div id="div20" class="container_i hero__dark_seer">
-            <img
-              class="imagen"
-              src="Assets/Heroes/dark_seer.png"
-              alt="dark_seer"
-            />
-          </div>
-          <div id="div21" class="container_i hero__dark_willow">
-            <img
-              class="imagen"
-              src="Assets/Heroes/dark_willow.png"
-              alt="dark_willow"
-            />
-          </div>
-          <div id="div22" class="container_i hero__dawnbreaker">
-            <img
-              class="imagen"
-              src="Assets/Heroes/dawnbreaker.png"
-              alt="dawnbreaker"
-            />
-          </div>
-          <div id="div23" class="container_i hero__dazzle">
-            <img class="imagen" src="Assets/Heroes/dazzle.png" alt="dazzle" />
-          </div>
-          <div id="div24" class="container_i hero__death_prophet">
-            <img
-              class="imagen"
-              src="Assets/Heroes/death_prophet.png"
-              alt="death_prophet"
-            />
-          </div>
-          <div id="div25" class="container_i hero__disruptor">
-            <img
-              class="imagen"
-              src="Assets/Heroes/disruptor.png"
-              alt="disruptor"
-            />
-          </div>
-          <div id="div26" class="container_i hero__doom_bringer">
-            <img
-              class="imagen"
-              src="Assets/Heroes/doom_bringer.png"
-              alt="doom_bringer"
-            />
-          </div>
-          <div id="div27" class="container_i hero__dragon_knight">
-            <img
-              class="imagen"
-              src="Assets/Heroes/dragon_knight.png"
-              alt="dragon_knight"
-            />
-          </div>
-          <div id="div28" class="container_i hero__drow_ranger">
-            <img
-              class="imagen"
-              src="Assets/Heroes/drow_ranger.png"
-              alt="drow_ranger"
-            />
-          </div>
-          <div id="div29" class="container_i hero__earth_spirit">
-            <img
-              class="imagen"
-              src="Assets/Heroes/earth_spirit.png"
-              alt="earth_spirit"
-            />
-          </div>
-          <div id="div30" class="container_i hero__rattletrap">
-            <img
-              class="imagen"
-              src="Assets/Heroes/rattletrap.png"
-              alt="rattletrap"
-            />
-          </div>
-        </div>
-        <div id="video-container" class="section__bighero"></div>
-        <script>
-          var divs = document.querySelectorAll("div[id^='div']");
-          var videoContainer = document.getElementById("video-container");
+      <script>
+  
+          const heroesImg = document.querySelectorAll('.small__img');
+          const video = document.getElementById('video__heroes');
+          
+          
+          for (let i = 0; i < heroesImg.length; i++) {
+              
+              heroesImg[i].addEventListener('click', ()=>{
+                  
+                  let heroeName = heroesImg[i].src ;
+                  
+                  let hero = heroeName.slice(102, -4);
+                  
+                  video.src = `Assets/Heroes/${hero}.webm`;
+                  
+                })
+            }
+            
+            const myPicture = document.getElementById("myPicture");
+            const allImgs = myPicture.querySelectorAll("img");
+            const iconStr = document.getElementById('iconStr');
+            const iconAgi = document.getElementById('iconAgi');
+            const iconInt = document.getElementById('iconInt');
+            
+          let showStrImages = false;
 
-          for (var i = 0; i < divs.length; i++) {
-            divs[i].addEventListener("click", function () {
-              var imageName =
-                this.getElementsByTagName("img")[0].getAttribute("src");
-
-              var video = document.createElement("video");
-              video.setAttribute("src", imageName.replace("png", "webm"));
-              video.setAttribute("autoplay", "true");
-              video.setAttribute("muted", "true");
-              video.setAttribute("loop", "true");
-              video.setAttribute("width", "100%");
-              video.setAttribute("object-fit", "contain");
-              video.setAttribute("height", "708px");
-              videoContainer.innerHTML = "";
-              videoContainer.appendChild(video);
+          iconStr.addEventListener("click", () => {
+            if (!showStrImages) {
+    // Mostrar solo las imágenes con la clase "str"
+            allImgs.forEach((img) => {
+            if (img.classList.contains("str")) {
+                img.style.display = "block";
+              }else {
+                img.style.display ='none'
+            }
             });
-          }
-        </script>
+                showStrImages = true;
+            } else {
+    // Mostrar todas las imágenes
+            allImgs.forEach((img) => {
+                img.style.display = "block";
+            });
+                showStrImages = false;
+            }
+            });
+
+          let showIntImages = false;
+
+          iconInt.addEventListener("click", () => {
+            if (!showIntImages) {
+    // Mostrar solo las imágenes con la clase "int"
+            allImgs.forEach((img) => {
+            if (img.classList.contains("int")) {
+                img.style.display = "block";
+            }else {
+              img.style.display = "none";
+            }
+            });
+                showIntImages = true;
+            } else {
+    // Mostrar todas las imágenes
+            allImgs.forEach((img) => {
+              img.style.display = "block";
+            });
+                showIntImages = false;
+            }
+            });
+
+            let showAgiImages = false;
+
+          iconAgi.addEventListener("click", () => {
+            if (!showAgiImages) {
+    // Mostrar solo las imágenes con la clase "int"
+            allImgs.forEach((img) => {
+            if (img.classList.contains("agi")) {
+                img.style.display = "block";
+            }else {
+              img.style.display = "none";
+            }
+            });
+                showAgiImages = true;
+            } else {
+    // Mostrar todas las imágenes
+            allImgs.forEach((img) => {
+              img.style.display = "block";
+            });
+                showAgiImages = false;
+            }
+            });
+
+            const buscador = document.getElementById('buscador');
+            const imgs = document.querySelectorAll('.heroes__img img');
+
+            buscador.addEventListener('input', function() {
+            const valorBuscado = this.value.toLowerCase().trim();
+  
+              imgs.forEach(img => {
+            const altText = img.alt.toLowerCase();
+    
+               if (altText.includes(valorBuscado)) {
+                 img.style.transform = 'scale(1)';
+              } else {
+                 img.style.transform = 'scale(0)';
+                   }
+                  });
+                  });
+      </script>
       </div>
+      <footer>
+        <div class="footer_logos">
+            <img src="Assets/valve_logo.png" alt="valve_logo">
+            <img src="Assets/dota_footer_logo.png" alt="dota_logo">
+        </div>
+        <div class="footer_description">Dota and the Dota logo are trademarks and/or registered trademarks of Valve Corporation. 2023 Valve Corporation, all rights reserved.</div>
+      </footer>
     </div>
   </body>
 </html>
+
+
+
