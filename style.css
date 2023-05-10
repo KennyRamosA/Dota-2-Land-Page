@@ -397,7 +397,6 @@ footer {
 @media screen and (max-width: 1025px) {
   .hero h1 {
     font-size: 2rem;
-    height: 70%;
   }
 
   .footer_description {
@@ -407,19 +406,10 @@ footer {
 
 @media screen and (max-width: 769px) {
   .hero {
-    width: 70%;
+    width: 75%;
   }
-
-  .hero h1 {
-    height: 50%;
-  }
-
-  .card__container {
-    height: 160px;
-  }
-
   .card {
-    padding-top: 110px;
+    padding-top: 150px;
   }
 
   .card__description {
@@ -444,17 +434,35 @@ footer {
     height: 35px;
   }
 
+  .heroes__container {
+    flex-direction: column-reverse;
+  }
+
+  .video__container {
+    text-align: center;
+  }
+
+  .video__big {
+    width: 80%;
+  }
+
+  .heroes__img {
+    width: 80%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+
   .footer_description {
     width: 80%;
   }
 }
 
 @media screen and (max-width: 700px) {
-  .header__navigation {
-    display: none;
-  }
   .header {
     justify-content: center;
+  }
+
+  .header__navigation {
+    display: none;
   }
 }
 
@@ -472,15 +480,11 @@ footer {
   }
 
   .hero h1 {
-    font-size: 1.6rem;
-  }
-
-  .card__container {
-    height: 112px;
+    font-size: 1.7rem;
   }
 
   .card {
-    padding-top: 75px;
+    padding-top: 115px;
   }
 
   .card__span {
@@ -491,8 +495,13 @@ footer {
     font-size: 15px;
   }
 
+  .card__container {
+    height: 150px;
+    gap: 10px;
+  }
+
   .card__description {
-    font-size: 0.4rem;
+    font-size: 0.5rem;
   }
 
   .heroes__tittle {
@@ -530,10 +539,15 @@ footer {
   .heroes__container {
     flex-direction: column-reverse;
     justify-content: space-between;
+    height: 84vh;
+  }
+
+  .video__big {
+    width: 85%;
   }
 
   .video__container {
-    width: 56%;
+    width: 100%;
   }
 
   .heroes__img {
@@ -559,5 +573,9 @@ footer {
 
   .filter__search {
     width: 130px;
+  }
+
+  .video__big {
+    width: 100%;
   }
 }
