@@ -139,19 +139,34 @@
           const heroesImg = document.querySelectorAll('.small__img');
           const video = document.getElementById('video__heroes');
           
-          
           for (let i = 0; i < heroesImg.length; i++) {
               
               heroesImg[i].addEventListener('click', ()=>{
                   
                   let heroeName = heroesImg[i].src ;
                   
-                  let hero = heroeName.slice(74, -4);
+                  let hero = heroeName.slice(14, -4);
                   
                   video.src = `Assets/Heroes/${hero}.mp4`;
                   
                 })
             }
+            
+          
+          // This script only works on this PC.
+
+          // for (let i = 0; i < heroesImg.length; i++) {
+              
+          //     heroesImg[i].addEventListener('click', ()=>{
+                  
+          //         let heroeName = heroesImg[i].src ;
+                  
+          //         let hero = heroeName.slice(102, -4);
+                  
+          //         video.src = `Assets/Heroes/${hero}.mp4`;
+                  
+          //       })
+          //   }
             
             const myPicture = document.getElementById("myPicture");
             const allImgs = myPicture.querySelectorAll("img");
