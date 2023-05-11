@@ -316,7 +316,7 @@ body {
 .heroes__img {
   position: relative;
   padding: 30px;
-  width: 50%;
+  width: 45%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
@@ -477,7 +477,7 @@ footer {
   }
 
   .hero {
-    width: 65%;
+    width: 75%;
   }
 
   .hero h1 {
@@ -497,7 +497,7 @@ footer {
   }
 
   .card__container {
-    height: 150px;
+    height: 117px;
     gap: 10px;
   }
 
@@ -544,7 +544,7 @@ footer {
   }
 
   .video__big {
-    width: 85%;
+    width: 80%;
   }
 
   .video__container {
@@ -553,7 +553,7 @@ footer {
 
   .heroes__img {
     width: 100%;
-    padding: 10px;
+    padding: 0px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
 
@@ -577,6 +577,6 @@ footer {
   }
 
   .video__big {
-    width: 100%;
+    width: 90%;
   }
 }
