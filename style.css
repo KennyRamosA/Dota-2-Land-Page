@@ -436,6 +436,7 @@ footer {
 
   .heroes__container {
     flex-direction: column-reverse;
+    width: 98%;
   }
 
   .video__container {
@@ -447,7 +448,7 @@ footer {
   }
 
   .heroes__img {
-    width: 80%;
+    width: 85%;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
 
